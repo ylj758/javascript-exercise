@@ -8,6 +8,7 @@ function chooseNoRepeatNumber(collection) {
   return collection.filter(function(item, index, self) {
     return self.indexOf(item) === index;
   });
+  // return [...new Set(collection)];
 }
 
 export { chooseMultiplesOfThree, chooseNoRepeatNumber };
